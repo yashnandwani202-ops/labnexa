@@ -2,79 +2,217 @@
 
 {% block content %}
 
-<div class="container py-5">
+<div class="container py-5 faculty-dashboard">
 
-    <div class="card shadow-lg border-0 mb-4">
-        <div class="card-body p-4">
-            <h2 class="fw-bold">
-                Welcome back, {{ session["full_name"] }} 👋
+    <!-- ================================
+         HEADER
+         ================================ -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <div class="dashboard-eyebrow">
+                FACULTY DASHBOARD
+            </div>
+
+            <h2>
+                Good to see you, {{ session["full_name"] }}
             </h2>
 
-            <p class="text-muted mb-0">
-                Review and manage student equipment booking requests.
+            <p>
+                Review student requests and manage laboratory approvals.
             </p>
+
         </div>
+
+        <div class="dashboard-role">
+            <i class="bi bi-person-badge"></i>
+            Faculty
+        </div>
+
     </div>
 
-    <h4 class="mb-4 fw-bold">Faculty Actions</h4>
+
+    <!-- ================================
+         FACULTY ACTIONS
+         ================================ -->
+
+    <div class="dashboard-section-title">
+
+        <div>
+            <span>FACULTY ACTIONS</span>
+            <h4>Manage Requests</h4>
+        </div>
+
+    </div>
+
 
     <div class="row g-4">
 
-        <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center p-4">
-                    <i class="bi bi-clipboard-data display-4 text-primary"></i>
-                    <h4 class="mt-3">Booking Requests</h4>
-                    <p class="text-muted">View pending, approved, and rejected requests.</p>
-                    <a href="/faculty-requests" class="btn btn-primary rounded-pill px-4">Review</a>
-                </div>
-            </div>
-        </div>
+
+        <!-- BOOKING REQUESTS -->
 
         <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center p-4">
-                    <i class="bi bi-check2-circle display-4 text-success"></i>
-                    <h4 class="mt-3">Approvals</h4>
-                    <p class="text-muted">Approve valid requests based on equipment availability.</p>
-                    <a href="/faculty-requests" class="btn btn-success rounded-pill px-4">Open</a>
+
+            <div class="dashboard-action-card">
+
+                <div class="action-icon">
+                    <i class="bi bi-clipboard-data"></i>
                 </div>
+
+                <div class="action-content">
+
+                    <h5>Booking Requests</h5>
+
+                    <p>
+                        Review pending, approved, and rejected
+                        equipment booking requests.
+                    </p>
+
+                </div>
+
+                <a href="/faculty-requests" class="action-link">
+                    Review requests
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
             </div>
+
         </div>
 
+
+        <!-- APPROVALS -->
+
         <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center p-4">
-                    <i class="bi bi-person-badge display-4 text-info"></i>
-                    <h4 class="mt-3">Faculty Profile</h4>
-                    <p class="text-muted">View your account and role information.</p>
-                    <button class="btn btn-info text-white rounded-pill px-4" disabled>Coming Soon</button>
+
+            <div class="dashboard-action-card">
+
+                <div class="action-icon">
+                    <i class="bi bi-check2-circle"></i>
                 </div>
+
+                <div class="action-content">
+
+                    <h5>Approvals</h5>
+
+                    <p>
+                        Approve valid student requests after
+                        checking equipment availability.
+                    </p>
+
+                </div>
+
+                <a href="/faculty-requests" class="action-link">
+                    Manage approvals
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
             </div>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="col-lg-4">
+
+            <div class="dashboard-action-card">
+
+                <div class="action-icon">
+                    <i class="bi bi-person"></i>
+                </div>
+
+                <div class="action-content">
+
+                    <h5>Account</h5>
+
+                    <p>
+                        View your faculty account and role
+                        information.
+                    </p>
+
+                </div>
+
+                <button class="action-link action-disabled" disabled>
+                    Profile unavailable
+                </button>
+
+            </div>
+
         </div>
 
     </div>
 
-    <div class="card shadow-sm border-0 mt-5">
-        <div class="card-body">
-            <h4 class="fw-bold mb-3">Faculty Information</h4>
 
-            <table class="table">
-                <tr>
-                    <th>Name</th>
-                    <td>{{ session["full_name"] }}</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>{{ session["email"] }}</td>
-                </tr>
-                <tr>
-                    <th>Role</th>
-                    <td>{{ session["role"]|title }}</td>
-                </tr>
-            </table>
+    <!-- ================================
+         FACULTY INFORMATION
+         ================================ -->
+
+    <div class="dashboard-section-title information-title">
+
+        <div>
+
+            <span>ACCOUNT</span>
+
+            <h4>Faculty Information</h4>
+
         </div>
+
     </div>
+
+
+    <div class="information-panel">
+
+
+        <div class="information-row">
+
+            <div class="information-label">
+                <i class="bi bi-person"></i>
+                Name
+            </div>
+
+            <div class="information-value">
+                {{ session["full_name"] }}
+            </div>
+
+        </div>
+
+
+        <div class="information-row">
+
+            <div class="information-label">
+                <i class="bi bi-envelope"></i>
+                Email
+            </div>
+
+            <div class="information-value">
+                {{ session["email"] }}
+            </div>
+
+        </div>
+
+
+        <div class="information-row">
+
+            <div class="information-label">
+                <i class="bi bi-shield-check"></i>
+                Role
+            </div>
+
+            <div class="information-value">
+
+                <span class="role-badge">
+                    {{ session["role"]|title }}
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
 
 </div>
 
