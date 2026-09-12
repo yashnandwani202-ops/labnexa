@@ -49,13 +49,17 @@ body {
 
 .navbar {
     padding: 16px 0;
+
     background: rgba(17, 20, 23, 0.97) !important;
+
     border-bottom: 1px solid var(--border);
 }
 
 .navbar-brand {
     color: #F5F5F5 !important;
+
     font-weight: 800;
+
     letter-spacing: .3px;
 }
 
@@ -65,8 +69,11 @@ body {
 
 .nav-link {
     color: var(--text-muted) !important;
+
     font-weight: 500;
+
     margin-left: 14px;
+
     transition: .2s ease;
 }
 
@@ -76,6 +83,7 @@ body {
 
 .nav-link.active {
     color: var(--primary-light) !important;
+
     font-weight: 700;
 }
 
@@ -86,6 +94,7 @@ body {
 
 .labnexa-logo {
     color: white;
+
     font-weight: 800;
 }
 
@@ -100,17 +109,24 @@ body {
 
 .home-hero {
     position: relative;
+
     min-height: calc(100vh - 75px);
+
     display: flex;
+
     align-items: center;
+
     overflow: hidden;
+
     padding: 100px 0 80px;
 
     background-image:
         url("../images/labnexa-bg.png");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 }
 
@@ -118,6 +134,7 @@ body {
     content: "";
 
     position: absolute;
+
     inset: 0;
 
     background:
@@ -136,6 +153,7 @@ body {
     content: "";
 
     position: absolute;
+
     inset: 0;
 
     background:
@@ -157,6 +175,7 @@ body {
 
 .hero-container {
     position: relative;
+
     z-index: 3;
 }
 
@@ -210,6 +229,7 @@ body {
 
 .home-title span {
     display: block;
+
     color: var(--orange);
 }
 
@@ -1114,7 +1134,7 @@ body {
 
 
 /* =========================================
-   TABLE MUTED / ACTION TEXT FIX
+   TABLE MUTED TEXT
    ========================================= */
 
 .table .text-muted,
@@ -1123,9 +1143,10 @@ body {
     color: #7F8A93 !important;
 }
 
-.table td {
-    color: #E2E8EC !important;
-}
+
+/* =========================================
+   TABLE ACTION LINKS
+   ========================================= */
 
 .table td a {
     color: #18C8FF !important;
@@ -1133,6 +1154,59 @@ body {
 
 .table td a:hover {
     color: #FFB84D !important;
+}
+
+
+/* =========================================
+   TABLE ACTION BUTTONS
+   IMPORTANT:
+   These rules override the generic
+   .table td a rule above.
+   ========================================= */
+
+.table td .btn-warning,
+.table td a.btn-warning {
+    background: #FFB000 !important;
+
+    border-color: #FFB000 !important;
+
+    color: #111111 !important;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+}
+
+.table td .btn-warning:hover,
+.table td a.btn-warning:hover {
+    background: #FFC233 !important;
+
+    border-color: #FFC233 !important;
+
+    color: #111111 !important;
+}
+
+
+.table td .btn-danger,
+.table td a.btn-danger {
+    background: #E63946 !important;
+
+    border-color: #E63946 !important;
+
+    color: #FFFFFF !important;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+}
+
+.table td .btn-danger:hover,
+.table td a.btn-danger:hover {
+    background: #F0525E !important;
+
+    border-color: #F0525E !important;
+
+    color: #FFFFFF !important;
 }
 
 
