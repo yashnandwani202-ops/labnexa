@@ -1,104 +1,328 @@
-# 🧪 LabNexa
+**# 🧪 LabNexa**
 
-A modern, role-based **Laboratory Equipment Management System** built using **Python, Flask, and MySQL**. LabNexa simplifies laboratory equipment booking, approval workflows, inventory management, analytics, and PDF report generation through a clean and responsive web interface.
+A modern, role-based **\*\*Laboratory Equipment Management System\*\*** built using **\*\*Flask\*\*** and **\*\*MySQL\*\***. LabNexa streamlines laboratory equipment booking, approval workflows, inventory management, analytics, and PDF report generation through a clean and responsive web interface.
 
----
+**---**
 
-## 📌 Overview
+**# 📌 Overview**
 
 LabNexa is a full-stack web application developed to simplify the management of laboratory equipment in educational institutions.
 
-The system provides separate dashboards and permissions for **Students, Faculty, and Administrators**, allowing laboratory resources to be managed in a structured and organized manner.
+The system provides separate dashboards and permissions for **\*\*Students\*\***, **\*\*Faculty\*\***, and **\*\*Administrators\*\***, ensuring secure and organized management of laboratory resources.
 
----
+**---**
 
-## 🌟 Project Highlights
+**# 🌟 Project Highlights**
 
-- 🔐 Secure Authentication with Password Hashing
-- 👥 Role-Based Access Control
-- 📦 Equipment Management (CRUD)
-- 👤 User Management (CRUD)
-- 🔍 Equipment Search and Filtering
-- 📊 Booking Analytics Dashboard
-- 📄 Downloadable PDF Reports
-- 📱 Responsive User Interface
-- 🛡️ Session-Based Authentication
+\- 🔐 Secure Authentication with Password Hashing
 
----
+\- 👥 Role-Based Access Control
 
-## ✨ Features
+\- 📦 Equipment Management (CRUD)
 
-### 👨‍🎓 Student Module
+\- 👤 User Management (CRUD)
 
-- Secure Registration and Login
-- Browse Available Equipment
-- Search Equipment
-- Filter Equipment by Category
-- Book Laboratory Equipment
-- View Booking History
-- Track Booking Status
+\- 🔍 Equipment Search & Smart Filters
 
----
+\- 📊 Interactive Booking Analytics Dashboard
 
-### 👨‍🏫 Faculty Module
+\- 📄 Downloadable PDF Reports
 
-- Secure Login
-- View Equipment Requests
-- Approve Booking Requests
-- Reject Booking Requests
+\- 📱 Responsive User Interface
 
----
+\- 🛡️ Session-Based Authentication
 
-### 👨‍💼 Admin Module
+**---**
 
-- Admin Dashboard
-- Equipment Management (CRUD)
-- User Management (CRUD)
-- Inventory Management
-- View System Reports
-- Booking Analytics Dashboard
-- Generate PDF Reports
+**# ✨ Features**
 
----
+**## 👨‍🎓 Student Module**
 
-## 🔐 Security Features
+\- Secure Registration & Login
 
-- Password Hashing using Werkzeug
-- Session-Based Authentication
-- Role-Based Access Control
-- Protected Routes
-- Secure Login System
+\- Browse Available Equipment
 
----
+\- Search Equipment
 
-## 🛠️ Technology Stack
+\- Filter by Category
 
-| Category | Technology |
-|----------|------------|
-| Backend | Python, Flask |
-| Frontend | HTML5, CSS3, Bootstrap 5, JavaScript |
-| Database | MySQL |
-| Template Engine | Jinja2 |
-| PDF Generation | ReportLab |
-| Version Control | Git & GitHub |
-| Deployment | Render |
+\- Filter by Availability
 
----
+\- Book Laboratory Equipment
 
-## 📂 Project Structure
+\- View Booking History
 
-```text
+\- Track Booking Status
+
+**---**
+
+**## 👨‍🏫 Faculty Module**
+
+\- Secure Login
+
+\- View Equipment Requests
+
+\- Approve Booking Requests
+
+\- Reject Booking Requests
+
+**---**
+
+**## 👨‍💼 Admin Module**
+
+\- Admin Dashboard
+
+\- Equipment Management (CRUD)
+
+\- User Management (CRUD)
+
+\- Inventory Management
+
+\- View System Reports
+
+\- Booking Analytics Dashboard
+
+\- Generate PDF Reports
+
+**---**
+
+**# 🔐 Security Features**
+
+\- Password Hashing using Werkzeug
+
+\- Session-Based Authentication
+
+\- Role-Based Access Control
+
+\- Protected Routes
+
+\- Secure Login System
+
+**---**
+
+**# 🛠️ Technology Stack**
+
+\| Category | Technology |
+
+\|----------|------------|
+
+\| Backend | Python, Flask |
+
+\| Frontend | HTML5, CSS3, Bootstrap 5, Chart.js |
+
+\| Database | MySQL |
+
+\| Template Engine | Jinja2 |
+
+\| PDF Generation | ReportLab |
+
+\| Version Control | Git & GitHub |
+
+**---**
+
+**# 📂 Project Structure**
+
+\`\`\`text
+
 LabNexa
+
 │
+
 ├── static
-│   ├── css
-│   ├── images
-│   └── screenshots
+
+│   ├── css
+
+│   ├── images
+
+│   ├── screenshots
+
 │
+
 ├── templates
+
 │
+
 ├── app.py
+
 ├── schema.sql
+
 ├── requirements.txt
+
 ├── .gitignore
+
 └── README.md
+
+\`\`\`
+
+**---**
+
+**# 📸 Application Screenshots**
+
+**## 🏠 Homepage**
+
+![Homepage]\(static/screenshots/Homepage.png)
+
+**---**
+
+**## 👨‍🎓 Student Dashboard**
+
+![Student Dashboard]\(static/screenshots/student-dashboard.png)
+
+**---**
+
+**## 👨‍🏫 Faculty Dashboard**
+
+![Faculty Dashboard]\(static/screenshots/faculty-dashboard.png)
+
+**---**
+
+**## 👨‍💼 Admin Dashboard**
+
+![Admin Dashboard]\(static/screenshots/admin-dashboard.png)
+
+**---**
+
+**## 📦 Equipment Management**
+
+![Equipment Management]\(static/screenshots/manage-equipment.png)
+
+**---**
+
+**## 👥 User Management**
+
+![User Management]\(static/screenshots/manage-users.png)
+
+**---**
+
+**## 📊 Reports Dashboard**
+
+![Reports Dashboard]\(static/screenshots/reports.png)
+
+**---**
+
+**## 📈 Booking Analytics Dashboard**
+
+![Booking Analytics]\(static/screenshots/booking\_analytics\_chart.png)
+
+**---**
+
+**## 📄 PDF Report Generation**
+
+![PDF Report]\(static/screenshots/pdf\_report.png)
+
+**---**
+
+**# 👥 User Roles**
+
+\| Role | Responsibilities |
+
+\|------|------------------|
+
+\| Student | Register, Login, Search Equipment, Book Equipment, View Booking History |
+
+\| Faculty | View Requests, Approve Bookings, Reject Bookings |
+
+\| Administrator | Manage Users, Equipment, Inventory, Reports & Analytics |
+
+**---**
+
+**# 🚀 Installation**
+
+**### Clone the repository**
+
+\`\`\`bash
+
+git clone [https://github.com/yashnandwani202-ops/labnexa.git](https://github.com/yashnandwani202-ops/labnexa.git)
+
+\`\`\`
+
+**### Navigate to the project**
+
+\`\`\`bash
+
+cd labnexa
+
+\`\`\`
+
+**### Create a virtual environment**
+
+\`\`\`bash
+
+python -m venv venv
+
+\`\`\`
+
+**### Activate the virtual environment**
+
+**\*\*Windows\*\***
+
+\`\`\`bash
+
+venv\Scripts\activate
+
+\`\`\`
+
+**### Install dependencies**
+
+\`\`\`bash
+
+pip install -r requirements.txt
+
+\`\`\`
+
+**### Import the database**
+
+Import the \`schema.sql\` file into MySQL.
+
+**### Run the application**
+
+\`\`\`bash
+
+python app.py
+
+\`\`\`
+
+**### Open in your browser**
+
+\`\`\`
+
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+\`\`\`
+
+**---**
+
+**# 🔮 Future Enhancements**
+
+\- QR Code Based Equipment Checkout
+
+\- Email Notifications
+
+\- Equipment Image Upload
+
+\- Equipment Maintenance Module
+
+\- Equipment Reservation Calendar
+
+\- REST API for Mobile Application
+
+\- Automatic Database Backup
+
+**---**
+
+**# 👨‍💻 Developer**
+
+**\*\*Yash Nandwani\*\***
+
+B.Tech Electronics & Computer Engineering (ECM)
+
+GitHub: [https://github.com/yashnandwani202-ops](https://github.com/yashnandwani202-ops)
+
+**---**
+
+**# ⭐ Support**
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+Thank you for visiting **\*\*LabNexa\*\***!
+this is my current readme
