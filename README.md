@@ -38,12 +38,16 @@ The system provides separate dashboards and permissions for **Students, Faculty,
 - View Booking History
 - Track Booking Status
 
+---
+
 ### 👨‍🏫 Faculty Module
 
 - Secure Login
 - View Equipment Requests
 - Approve Booking Requests
 - Reject Booking Requests
+
+---
 
 ### 👨‍💼 Admin Module
 
